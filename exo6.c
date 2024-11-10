@@ -21,5 +21,10 @@ int main() {
         }
     }
     printf("N = %d", sumOfDigits);
+    printf("\n");
+    printf("\n");
+    printf("\n");
+    printf("---------------------------------------------------\n");
+    printf("Made by: Ahmed Belmehnouf");
     return 0;
 }
