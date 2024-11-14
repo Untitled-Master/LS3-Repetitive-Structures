@@ -5,7 +5,6 @@ int main() {
     int n, m, i = 2, j = 1, s = 0;
     printf("Enter a number: ");
     scanf("%d", &n);
-    printf("sqrt of %d is: %f\n", n, sqrt(n));
     printf("Prime factors of %d are: \n", n);
     m = sqrt(n);
     while (i <= m) {
@@ -24,6 +23,9 @@ int main() {
         i++;
         s = 0;
         j = 1;
+    }
+    if(n > m){
+        printf("%d\t", n);
     }
     printf("\n");
     printf("\n");
