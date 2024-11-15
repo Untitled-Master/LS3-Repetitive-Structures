@@ -14,18 +14,20 @@ int main() {
             }
             j++;
         }
-        if (s == 2) {
-            if (n % i == 0) {
+        if (s == 2 && n % i == 0) {
+            while (n % i == 0) {
                 n = n / i;
-                printf("%d\t", i);
+                
             }
+            printf("%d\t", i);
         }
         i++;
         s = 0;
         j = 1;
     }
-    if(n > m){
-        printf("%d\t", n);
+    // If n is still greater than 1, it is a prime number and should be printed
+    if (n > 1) {
+        printf("%d", n);
     }
     printf("\n");
     printf("\n");
